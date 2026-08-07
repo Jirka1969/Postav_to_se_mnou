@@ -2,26 +2,35 @@
 <html lang="cs">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>POSTAV SI TO SE MNOU | Truhlářství Jiří Vaňha</title>
+    <title>POSTAV SI TO SE MNOU | Jiří Vaňha</title>
 
     <meta name="description"
-        content="Postavte si vlastní pergolu, kuchyň nebo vestavnou skříň pod vedením zkušeného truhláře.">
+        content="Postavte si pergolu, kuchyň, vestavnou skříň nebo jiný projekt společně se zkušeným truhlářem.">
+
+    <meta name="theme-color" content="#304534">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+
+    <!-- ===========================================================
+         HEADER
+    ============================================================ -->
 
     <header class="header">
 
@@ -29,21 +38,27 @@
 
             <a href="#" class="logo">
 
-                <span class="logo-title">POSTAV SI TO SE MNOU</span>
+                <span class="logo__title">
 
-                <span class="logo-subtitle">
-                    Projekt Truhlářství Jiří Vaňha
+                    POSTAV SI TO SE MNOU
+
+                </span>
+
+                <span class="logo__subtitle">
+
+                    Projekt Jiřího Vaňhy
+
                 </span>
 
             </a>
 
-            <nav class="navigation">
+            <nav class="nav">
 
-                <ul class="navigation-list">
+                <ul class="nav__list">
 
                     <li><a href="#">Domů</a></li>
 
-                    <li><a href="#">Projekt</a></li>
+                    <li><a href="#">Jak to funguje</a></li>
 
                     <li><a href="#">Realizace</a></li>
 
@@ -59,23 +74,24 @@
 
     </header>
 
+    <!-- ===========================================================
+         HERO
+    ============================================================ -->
 
+    <section class="hero">
 
-    <main>
+        <div class="hero__background"></div>
 
+        <div class="hero__overlay"></div>
 
+        <div class="container">
 
-        <!-- HERO -->
+            <div class="hero__content">
 
-        <section class="hero">
+                <p class="hero__question">
 
-            <div class="hero-overlay"></div>
-
-            <div class="container hero-content">
-
-                <p class="hero-pretitle">
-
-                    Váš projekt. Moje zkušenosti.
+                    Kolik věcí jste za posledních deset let<br>
+                    opravdu vytvořili vlastníma rukama?
 
                 </p>
 
@@ -86,52 +102,68 @@
 
                 </h1>
 
-                <p class="hero-text">
+                <p class="hero__text">
 
-                    Pergola, kuchyň, vestavná skříň nebo jiný projekt,
-                    na který budete celý život hrdí.
+                    Pergola. Kuchyň. Vestavná skříň.
+                    Nebo projekt, na který budete celý život hrdí.
 
                 </p>
 
-                <a href="#" class="btn">
+                <div class="hero__buttons">
 
-                    Domluvit konzultaci
+                    <a href="#" class="btn">
 
-                </a>
+                        Domluvit konzultaci
 
-            </div>
+                    </a>
 
-        </section>
+                    <a href="#" class="btn btn--outline">
 
+                        Jak to funguje
 
+                    </a>
 
-        <!-- QUOTE -->
-
-        <section class="quote">
-
-            <div class="container">
-
-                <blockquote>
-
-                    Některé věci je krásné vlastnit.<br>
-
-                    <strong>
-
-                        Ještě krásnější je vytvořit je vlastníma rukama.
-
-                    </strong>
-
-                </blockquote>
+                </div>
 
             </div>
 
-        </section>
+        </div>
 
+        <div class="hero__scroll">
 
+            ↓ Scroll
 
-    </main>
+        </div>
 
+    </section>
 
+    <!-- ===========================================================
+         MOTTO
+    ============================================================ -->
+
+    <section class="quote">
+
+        <div class="container">
+
+            <blockquote>
+
+                <p>
+
+                    Některé věci je krásné vlastnit.
+
+                </p>
+
+                <strong>
+
+                    Ještě krásnější je vytvořit je vlastníma rukama.
+
+                </strong>
+
+            </blockquote>
+
+        </div>
+
+    </section>
 
     <script src="js/script.js"></script>
 

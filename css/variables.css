@@ -1,149 +1,149 @@
-/* ==========================================
-   POSTAV SI TO SE MNOU
-   Design System
-   ========================================== */
+/*==================================================
+  POSTAV SI TO SE MNOU
+  DESIGN SYSTEM v1.0
+==================================================*/
 
-:root {
+:root{
 
-    /* ======================================
-       BARVY
-       ====================================== */
+/*==================================================
+  BAREVNÁ PALETA
+==================================================*/
 
-    --color-primary: #304534;
-    --color-primary-light: #3f5b44;
+--color-primary:#304534;
+--color-primary-light:#48644a;
 
-    --color-accent: #9B6B43;
-    --color-accent-light: #b7855d;
+--color-secondary:#9b6b43;
+--color-secondary-light:#b8865b;
 
-    --color-dark: #2d2d2d;
-    --color-light: #f7f3ed;
-    --color-white: #ffffff;
+--color-dark:#232323;
+--color-dark-2:#383838;
 
-    --color-text: #444444;
-    --color-text-light: #777777;
+--color-light:#f7f3ed;
+--color-light-2:#ece7df;
 
-    --color-border: #e4e0da;
+--color-white:#ffffff;
 
-    --overlay-dark: rgba(0,0,0,.55);
+--color-text:#444444;
+--color-text-light:#757575;
 
+--color-border:#ddd6cd;
 
-
-    /* ======================================
-       TYPOGRAFIE
-       ====================================== */
-
-    --font-heading: "Bebas Neue", sans-serif;
-    --font-text: "Inter", sans-serif;
+--overlay-dark:rgba(0,0,0,.55);
+--overlay-light:rgba(255,255,255,.08);
 
 
 
-    /* ======================================
-       VELIKOST PÍSMA
-       ====================================== */
+/*==================================================
+  TYPOGRAFIE
+==================================================*/
 
-    --fs-hero: clamp(4rem, 9vw, 8rem);
-
-    --fs-h1: clamp(3rem,6vw,5rem);
-
-    --fs-h2: clamp(2.2rem,4vw,3.5rem);
-
-    --fs-h3: 2rem;
-
-    --fs-large:1.4rem;
-
-    --fs-body:1.05rem;
-
-    --fs-small:.95rem;
+--font-heading:"Bebas Neue",sans-serif;
+--font-text:"Inter",sans-serif;
 
 
 
-    /* ======================================
-       TLOUŠŤKY PÍSMA
-       ====================================== */
+/*==================================================
+  VELIKOST PÍSMA
+==================================================*/
 
-    --fw-light:300;
-    --fw-normal:400;
-    --fw-medium:500;
-    --fw-semibold:600;
-    --fw-bold:700;
+--fs-hero:clamp(4.5rem,10vw,8rem);
 
+--fs-h1:clamp(3rem,7vw,5rem);
 
+--fs-h2:clamp(2.2rem,5vw,3.4rem);
 
-    /* ======================================
-       ŠÍŘKA OBSAHU
-       ====================================== */
+--fs-h3:2rem;
 
-    --container-width:1280px;
+--fs-large:1.35rem;
 
-    --container-padding:40px;
+--fs-body:1.08rem;
+
+--fs-small:.92rem;
 
 
 
-    /* ======================================
-       ODSAZENÍ
-       ====================================== */
+/*==================================================
+  TLOUŠŤKY PÍSMA
+==================================================*/
 
-    --space-xs:10px;
-    --space-sm:20px;
-    --space-md:40px;
-    --space-lg:80px;
-    --space-xl:120px;
-    --space-xxl:180px;
-
-
-
-    /* ======================================
-       ZAOBLENÍ
-       ====================================== */
-
-    --radius-small:8px;
-    --radius-medium:14px;
-    --radius-large:24px;
-    --radius-round:999px;
+--fw-light:300;
+--fw-normal:400;
+--fw-medium:500;
+--fw-semibold:600;
+--fw-bold:700;
 
 
 
-    /* ======================================
-       STÍNY
-       ====================================== */
+/*==================================================
+  ŠÍŘKA STRÁNKY
+==================================================*/
 
-    --shadow-small:
-        0 5px 15px rgba(0,0,0,.08);
+--container:1280px;
 
-    --shadow-medium:
-        0 10px 35px rgba(0,0,0,.15);
-
-    --shadow-large:
-        0 20px 60px rgba(0,0,0,.25);
+--padding:40px;
 
 
 
-    /* ======================================
-       PŘECHODY
-       ====================================== */
+/*==================================================
+  VÝŠKY
+==================================================*/
 
-    --transition-fast:.25s ease;
+--header-height:90px;
 
-    --transition-normal:.4s ease;
-
-    --transition-slow:.7s ease;
+--button-height:58px;
 
 
 
-    /* ======================================
-       MENU
-       ====================================== */
+/*==================================================
+  ODSAZENÍ
+==================================================*/
 
-    --header-height:90px;
+--space-xs:10px;
+--space-sm:20px;
+--space-md:40px;
+--space-lg:80px;
+--space-xl:120px;
+--space-xxl:180px;
 
 
 
-    /* ======================================
-       TLAČÍTKA
-       ====================================== */
+/*==================================================
+  ZAOBLENÍ
+==================================================*/
 
-    --button-height:58px;
+--radius-small:8px;
+--radius-medium:14px;
+--radius-large:24px;
+--radius-pill:999px;
 
-    --button-padding:0 38px;
+
+
+/*==================================================
+  STÍNY
+==================================================*/
+
+--shadow-small:
+
+0 8px 20px rgba(0,0,0,.08);
+
+--shadow-medium:
+
+0 18px 40px rgba(0,0,0,.15);
+
+--shadow-large:
+
+0 25px 70px rgba(0,0,0,.22);
+
+
+
+/*==================================================
+  ANIMACE
+==================================================*/
+
+--transition-fast:.25s ease;
+
+--transition:.4s ease;
+
+--transition-slow:.8s ease;
 
 }
