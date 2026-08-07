@@ -1,0 +1,1 @@
+console.log("POSTAV SI TO SE MNOU");
