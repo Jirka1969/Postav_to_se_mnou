@@ -1,0 +1,149 @@
+/* ==========================================
+   POSTAV SI TO SE MNOU
+   Design System
+   ========================================== */
+
+:root {
+
+    /* ======================================
+       BARVY
+       ====================================== */
+
+    --color-primary: #304534;
+    --color-primary-light: #3f5b44;
+
+    --color-accent: #9B6B43;
+    --color-accent-light: #b7855d;
+
+    --color-dark: #2d2d2d;
+    --color-light: #f7f3ed;
+    --color-white: #ffffff;
+
+    --color-text: #444444;
+    --color-text-light: #777777;
+
+    --color-border: #e4e0da;
+
+    --overlay-dark: rgba(0,0,0,.55);
+
+
+
+    /* ======================================
+       TYPOGRAFIE
+       ====================================== */
+
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-text: "Inter", sans-serif;
+
+
+
+    /* ======================================
+       VELIKOST PÍSMA
+       ====================================== */
+
+    --fs-hero: clamp(4rem, 9vw, 8rem);
+
+    --fs-h1: clamp(3rem,6vw,5rem);
+
+    --fs-h2: clamp(2.2rem,4vw,3.5rem);
+
+    --fs-h3: 2rem;
+
+    --fs-large:1.4rem;
+
+    --fs-body:1.05rem;
+
+    --fs-small:.95rem;
+
+
+
+    /* ======================================
+       TLOUŠŤKY PÍSMA
+       ====================================== */
+
+    --fw-light:300;
+    --fw-normal:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+
+
+
+    /* ======================================
+       ŠÍŘKA OBSAHU
+       ====================================== */
+
+    --container-width:1280px;
+
+    --container-padding:40px;
+
+
+
+    /* ======================================
+       ODSAZENÍ
+       ====================================== */
+
+    --space-xs:10px;
+    --space-sm:20px;
+    --space-md:40px;
+    --space-lg:80px;
+    --space-xl:120px;
+    --space-xxl:180px;
+
+
+
+    /* ======================================
+       ZAOBLENÍ
+       ====================================== */
+
+    --radius-small:8px;
+    --radius-medium:14px;
+    --radius-large:24px;
+    --radius-round:999px;
+
+
+
+    /* ======================================
+       STÍNY
+       ====================================== */
+
+    --shadow-small:
+        0 5px 15px rgba(0,0,0,.08);
+
+    --shadow-medium:
+        0 10px 35px rgba(0,0,0,.15);
+
+    --shadow-large:
+        0 20px 60px rgba(0,0,0,.25);
+
+
+
+    /* ======================================
+       PŘECHODY
+       ====================================== */
+
+    --transition-fast:.25s ease;
+
+    --transition-normal:.4s ease;
+
+    --transition-slow:.7s ease;
+
+
+
+    /* ======================================
+       MENU
+       ====================================== */
+
+    --header-height:90px;
+
+
+
+    /* ======================================
+       TLAČÍTKA
+       ====================================== */
+
+    --button-height:58px;
+
+    --button-padding:0 38px;
+
+}
