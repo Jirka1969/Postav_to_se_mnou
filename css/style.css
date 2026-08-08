@@ -346,56 +346,66 @@ p {
 
 
 /* ============================================================
-   7. HELP / ČTYŘI ÚROVNĚ SPOLUPRÁCE
+   7. HELP / 4 ÚROVNĚ SPOLUPRÁCE
    ============================================================ */
 
 .help {
-    padding: 140px 0 150px;
+    padding: 135px 0 145px;
+
     background: #e8e5dc;
+    color: #252a25;
 }
 
 
 /* ============================================================
-   ÚVOD SEKCE
+   ÚVOD
    ============================================================ */
 
 .help .section-intro {
-    max-width: 850px;
-    margin-bottom: 75px;
+    max-width: 1050px;
+    margin-bottom: 65px;
 }
 
 .help .section-intro h2 {
-    max-width: 760px;
+    max-width: 1050px;
 
-    margin-bottom: 28px;
+    margin: 0 0 30px;
 
-    font-size: clamp(4rem, 7vw, 7rem);
-    line-height: .84;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(5rem, 9vw, 9rem);
+    line-height: .94;
+    letter-spacing: 1px;
 
     color: #304534;
 }
 
 .help .section-intro p {
-    max-width: 680px;
+    max-width: 850px;
 
-    font-size: 1.05rem;
-    line-height: 1.8;
+    margin: 0;
 
-    color: #5f615c;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.12rem;
+    line-height: 1.65;
+    font-weight: 400;
+
+    color: #62645e;
 }
 
 
 /* ============================================================
-   GRID 2 × 2
+   GRID
    ============================================================ */
 
 .help__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
 
     gap: 2px;
 
-    background: #c7c3b8;
+    background: #c9c5ba;
 }
 
 
@@ -406,14 +416,14 @@ p {
 .help-card {
     position: relative;
 
-    min-height: 440px;
-
-    padding: 50px 48px 45px;
-
-    background: #f5f3ee;
+    min-width: 0;
 
     display: flex;
     flex-direction: column;
+
+    background: #f7f5ef;
+
+    overflow: hidden;
 
     transition:
         transform .3s ease,
@@ -421,107 +431,66 @@ p {
 }
 
 .help-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
 
-    background: #faf9f5;
+    background: #fbfaf6;
 }
 
 
 /* ============================================================
-   ČÍSLO
+   HORNÍ ČÁST KARTY
    ============================================================ */
+
+.help-card__top {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 25px 26px 0;
+}
 
 .help-card__number {
-    display: block;
-
-    margin-bottom: 38px;
-
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.55rem;
-    line-height: 1;
 
-    letter-spacing: 2px;
-
-    color: #a18360;
-}
-
-
-/* ============================================================
-   NADPIS KARTY
-   ============================================================ */
-
-.help-card h3 {
-    margin: 0 0 27px;
-
-    font-size: clamp(3rem, 4.3vw, 4.5rem);
-    line-height: .82;
+    font-size: 4.7rem;
+    line-height: .8;
 
     letter-spacing: 1px;
 
     color: #304534;
 }
 
+.help-card__icon {
+    width: 58px;
+    height: 58px;
 
-/* ============================================================
-   HLAVNÍ VĚTA
-   ============================================================ */
+    flex: 0 0 58px;
 
-.help-card p {
-    max-width: 540px;
-
-    margin: 0 0 18px;
-
-    font-size: .96rem;
-    line-height: 1.75;
-
-    color: #62645e;
+    color: #a37b45;
 }
 
-.help-card .help-card__lead {
-    font-size: 1.08rem;
-    line-height: 1.55;
-    font-weight: 500;
-
-    color: #343731;
-}
-
-
-/* ============================================================
-   SPODNÍ SDĚLENÍ
-   ============================================================ */
-
-.help-card strong {
+.help-card__icon svg {
     display: block;
 
-    margin-top: auto;
-    padding-top: 25px;
-
-    font-size: .88rem;
-    line-height: 1.5;
-
-    color: #304534;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* ============================================================
-   ZÁVĚREČNÁ VĚTA
+   NADPIS
    ============================================================ */
 
-.help__statement {
-    padding-top: 85px;
+.help-card h3 {
+    min-height: 105px;
 
-    text-align: center;
-}
-
-.help__statement p {
-    max-width: 900px;
-
-    margin: 0 auto;
+    margin: 25px 26px 0;
 
     font-family: 'Bebas Neue', sans-serif;
 
-    font-size: clamp(2.5rem, 4.5vw, 4.4rem);
-    line-height: .94;
+    font-size: clamp(2.4rem, 3vw, 3.35rem);
+    line-height: .87;
 
     letter-spacing: .5px;
 
@@ -530,27 +499,175 @@ p {
 
 
 /* ============================================================
+   MALÁ BRONZOVÁ ČÁRA
+   ============================================================ */
+
+.help-card__line {
+    width: 34px;
+    height: 2px;
+
+    margin: 18px 26px 17px;
+
+    background: #a37b45;
+}
+
+
+/* ============================================================
+   TEXT
+   ============================================================ */
+
+.help-card p {
+    margin: 0 26px 18px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: .88rem;
+    line-height: 1.65;
+
+    color: #565a54;
+}
+
+.help-card .help-card__lead {
+    margin-bottom: 14px;
+
+    font-size: .93rem;
+    line-height: 1.5;
+    font-weight: 600;
+
+    color: #252a25;
+}
+
+
+/* ============================================================
+   SPODNÍ PÁSEK
+   ============================================================ */
+
+.help-card__bottom {
+    min-height: 82px;
+
+    margin-top: auto;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+
+    color: white;
+}
+
+.help-card__bottom--green {
+    background: #304534;
+}
+
+.help-card__bottom--bronze {
+    background: #a37b45;
+}
+
+.help-card__bottom-icon {
+    flex: 0 0 32px;
+
+    width: 32px;
+
+    font-size: 1.8rem;
+
+    line-height: 1;
+
+    text-align: center;
+}
+
+.help-card__bottom strong {
+    font-family: 'Inter', sans-serif;
+
+    font-size: .76rem;
+    line-height: 1.45;
+    font-weight: 600;
+
+    color: white;
+}
+
+
+/* ============================================================
+   ZÁVĚR
+   ============================================================ */
+
+.help__statement {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding-top: 45px;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+}
+
+.help__statement-line {
+    width: 180px;
+    height: 1px;
+
+    background: #a37b45;
+}
+
+.help__statement-mark {
+    font-size: 1.7rem;
+
+    color: #a37b45;
+}
+
+.help__statement p {
+    margin: 0;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: clamp(2rem, 3.5vw, 3.3rem);
+    line-height: .9;
+
+    letter-spacing: 1px;
+
+    color: #304534;
+}
+
+.help__statement small {
+    width: 100%;
+
+    margin-top: -5px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: .85rem;
+    line-height: 1.5;
+
+    color: #666960;
+}
+
+
+/* ============================================================
    TABLET
    ============================================================ */
 
-@media (max-width: 1023px) {
+@media (max-width: 1100px) {
 
     .help {
         padding: 110px 0 120px;
     }
 
-    .help .section-intro {
-        margin-bottom: 60px;
+    .help .section-intro h2 {
+        font-size: clamp(4.8rem, 10vw, 7rem);
     }
 
-    .help-card {
-        min-height: 430px;
-
-        padding: 42px 38px 40px;
+    .help__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
     }
 
     .help-card h3 {
-        font-size: 3.5rem;
+        font-size: 3.4rem;
     }
 
 }
@@ -563,19 +680,19 @@ p {
 @media (max-width: 767px) {
 
     .help {
-        padding: 90px 0 95px;
+        padding: 85px 0 95px;
     }
 
 
     /* ÚVOD */
 
     .help .section-intro {
-        margin-bottom: 48px;
+        margin-bottom: 45px;
     }
 
     .help .section-intro h2 {
-        font-size: 3.8rem;
-        line-height: .86;
+        font-size: 4.3rem;
+        line-height: .96;
     }
 
     .help .section-intro p {
@@ -588,54 +705,93 @@ p {
 
     .help__grid {
         grid-template-columns: 1fr;
+
+        gap: 2px;
     }
 
     .help-card {
-        min-height: auto;
+        transform: none;
+    }
 
-        padding: 38px 30px 35px;
+    .help-card:hover {
+        transform: none;
+    }
+
+    .help-card__top {
+        padding: 28px 25px 0;
     }
 
     .help-card__number {
-        margin-bottom: 28px;
+        font-size: 4.2rem;
+    }
 
-        font-size: 1.35rem;
+    .help-card__icon {
+        width: 52px;
+        height: 52px;
+
+        flex-basis: 52px;
     }
 
     .help-card h3 {
-        margin-bottom: 22px;
+        min-height: auto;
 
-        font-size: 3.35rem;
-        line-height: .84;
+        margin: 23px 25px 0;
+
+        font-size: 3.3rem;
+        line-height: .86;
+    }
+
+    .help-card__line {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .help-card p {
-        font-size: .92rem;
-        line-height: 1.7;
+        margin-left: 25px;
+        margin-right: 25px;
+
+        font-size: .9rem;
+        line-height: 1.65;
     }
 
     .help-card .help-card__lead {
-        font-size: 1rem;
-        line-height: 1.55;
+        font-size: .98rem;
     }
 
-    .help-card strong {
-        margin-top: 8px;
-        padding-top: 20px;
+    .help-card__bottom {
+        min-height: 76px;
 
-        font-size: .84rem;
+        padding: 14px 20px;
     }
 
 
     /* ZÁVĚR */
 
     .help__statement {
-        padding-top: 60px;
+        gap: 15px;
+
+        padding-top: 45px;
+    }
+
+    .help__statement-line {
+        width: 55px;
+    }
+
+    .help__statement-mark {
+        font-size: 1.3rem;
     }
 
     .help__statement p {
-        font-size: 2.55rem;
-        line-height: .95;
+        width: 100%;
+
+        font-size: 2.65rem;
+        line-height: .9;
+    }
+
+    .help__statement small {
+        margin-top: 0;
+
+        font-size: .78rem;
     }
 
 }
@@ -652,19 +808,33 @@ p {
     }
 
     .help .section-intro h2 {
-        font-size: 3.35rem;
+        font-size: 3.65rem;
     }
 
-    .help-card {
-        padding: 32px 24px 30px;
+    .help-card__top {
+        padding-left: 21px;
+        padding-right: 21px;
     }
 
     .help-card h3 {
-        font-size: 2.9rem;
+        margin-left: 21px;
+        margin-right: 21px;
+
+        font-size: 2.95rem;
+    }
+
+    .help-card__line {
+        margin-left: 21px;
+        margin-right: 21px;
+    }
+
+    .help-card p {
+        margin-left: 21px;
+        margin-right: 21px;
     }
 
     .help__statement p {
-        font-size: 2.25rem;
+        font-size: 2.3rem;
     }
 
 }
