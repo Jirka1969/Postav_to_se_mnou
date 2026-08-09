@@ -887,7 +887,7 @@ p {
     margin: 0 0 22px;
 
     font-size: clamp(4rem, 6vw, 6.5rem);
-    line-height: .83;
+    line-height: 1.02;
 
     color: #304534;
 }
@@ -1586,7 +1586,7 @@ p {
 
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(5rem, 9vw, 9rem);
-    line-height: .88;
+    line-height: 1.02;
     letter-spacing: 1px;
 
     color: #f7f5ef;
@@ -1804,7 +1804,7 @@ p {
 
     .process__intro h2 {
         font-size: 4.3rem;
-        line-height: .94;
+        line-height: 1.02;
     }
 
     .process__intro p {
@@ -1893,7 +1893,7 @@ p {
 
     .process__intro h2 {
         font-size: 3.65rem;
-        line-height: .96;
+        line-height: 1.02;
     }
 
     .process-step h3 {
