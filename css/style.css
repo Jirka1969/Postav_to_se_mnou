@@ -270,6 +270,18 @@ p {
     opacity: .65;
 }
 
+.hero__project {
+    display: block;
+
+    margin: 0 0 12px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #d8a76b;
+}
 
 /* ============================================================
    5. MOTTO
@@ -2400,6 +2412,35 @@ p {
     color: rgba(255, 255, 255, .72);
 }
 
+.footer__person {
+    margin-bottom: 12px !important;
+
+    font-size: 1rem !important;
+    font-weight: 700;
+
+    color: #f7f5ef !important;
+}
+
+
+.footer__company-label {
+    margin-bottom: 2px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+
+    color: #c89b62;
+}
+
+
+.footer__ico {
+    margin-top: 8px !important;
+
+    font-size: .75rem !important;
+
+    color: rgba(255, 255, 255, .48) !important;
+}
 
 /* ============================================================
    SPODNÍ ČÁST
